@@ -1,0 +1,420 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Cyber Wings-- Mambers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'blink-cyan': 'blinkCyan 1s infinite',
+          },
+          keyframes: {
+            blinkCyan: {
+              '0%, 200%': { backgroundColor: '#22d3ee' },  // cyan-400
+              '50%': { backgroundColor: '#06b6d4' },        // cyan-500
+            },
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<!-------------------------------------------Fixed navigation---------------------------------------------->
+
+<header class="bg-[#050a0f] border-b border-[#0a1a27] sticky top-0 z-50">
+   <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
+    <div class="flex items-center space-x-2">
+    <svg height="50"width="50" xmlns="http://www.w3.org/2000/svg">
+      <a href="index.html">
+   <image class="w-12 h-12 mb-4 text-[#00D8FF] drop-shadow-[0_0_8px_rgba(0,216,255,0.7)]" height="50" width="50" href="logo.png"/>
+    </svg>
+  </a>
+     <span class="font-extrabold text-cyan-400 text-lg tracking-wide select-none drop-shadow-[0_0_8px_rgba(0,216,255,0.7)]">
+      THECYBERWINGS
+     </span>
+    </div>
+    <ul class="hidden md:flex space-x-10 text-sm font-normal text-gray-400">
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="about.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" href="member.html">
+       Members
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="#events">
+       Events
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="hidden md:flex space-x-6 text-gray-400 text-lg">
+     <a aria-label="Instagram" class="hover:text-pink-600 transition" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="GitHub" class="hover:text-white transition" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-blue-500 transition" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </nav>
+  </header>
+  <main class="flex-grow overflow-y-auto"> 
+
+<!-------------------------------------------Menbers Page---------------------------------------------->
+
+<body class="bg-[#0a121a] text-white">
+  <section class="bg-gradient-to-b from-[#0a121a] to-[#07141a] py-20 px-4 text-center max-w-7xl mx-auto">
+    <p class="text-xs text-[#2ac7f5] mb-3 font-mono">04 // OUR TEAM</p>
+    <h1 class="text-4xl font-extrabold mb-4">
+      Meet Our
+      <span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+          Members
+        </span>
+      <span class="text-[#b9a6e0]"> </span>
+    </h1>
+    <p class="max-w-xl mx-auto text-gray-300 text-base leading-relaxed">
+      The dedicated individuals who make The Cyber Wings a thriving community of cybersecurity enthusiasts, researchers, and innovators.
+    </p>
+  </section>
+
+<!---------------------------------------Leadership Team--------------------------------------------------------->
+
+   <section class="bg-[#0a0f0f] mx-auto px-6 py-16 text-center">
+     <h2 class="text-2xl font-bold mb-3">Leadership Team</h2>
+     <p class="text-gray-400 max-w-xl mx-auto mb-12 leading-relaxed">
+       Our experienced leaders guide the club's vision and ensure every member has opportunities to grow and contribute.
+     </p>
+
+  <div class="flex items-center justify-center p-4 gap-6">
+    <div class="rounded-lg border border-cyan-600 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 text-center relative group cursor-pointer pb-20 p-6 max-w-xs w-full text-center relative group cursor-pointer pb-20">
+    <div class="flex justify-center mb-4">
+      <div class="w-20 h-20 rounded-full border border-cyan-600 flex items-center justify-center text-cyan-400 font-semibold text-lg select-none">
+        AJ
+      </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">Alex Johnson</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Precident</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute left-6 right-6 bottom-6  rounded-md p-3">
+      Conducting vulnerability research and ethical hacking
+    </p>
+  </div>
+
+<div class="rounded-lg border border-cyan-600 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 text-center relative group cursor-pointer pb-20 p-6 max-w-xs w-full text-center relative group cursor-pointer pb-20">
+    <div class="flex justify-center mb-4">
+      <div class="w-20 h-20 rounded-full border border-cyan-600 flex items-center justify-center text-cyan-400 font-semibold text-lg select-none">
+        SC
+      </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">Sarah Chen</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Vice Precident</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute left-6 right-6 bottom-6  rounded-md p-3">
+      Conducting vulnerability research and ethical hacking
+    </p>
+  </div>
+  
+  <div class="rounded-lg border border-cyan-600 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 text-center relative group cursor-pointer pb-20 p-6 max-w-xs w-full text-center relative group cursor-pointer pb-20">
+    <div class="flex justify-center mb-4">
+      <div class="w-20 h-20 rounded-full border border-cyan-600 flex items-center justify-center text-cyan-400 font-semibold text-lg select-none">
+        PP
+      </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">Priya Patel</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Event Manager</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute left-6 right-6 bottom-6  rounded-md p-3">
+      Conducting vulnerability research and ethical hacking
+    </p>
+  </div>
+
+ <div class="rounded-lg border border-cyan-600 transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 text-center relative group cursor-pointer pb-20 p-6 max-w-xs w-full text-center relative group cursor-pointer pb-20">
+    <div class="flex justify-center mb-4">
+      <div class="w-20 h-20 rounded-full border border-cyan-600 flex items-center justify-center text-cyan-400 font-semibold text-lg select-none">
+        DK
+      </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">Marcus Taylor</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Technical lead</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute left-6 right-6 bottom-6  rounded-md p-3">
+      Conducting vulnerability research and ethical hacking
+    </p>
+  </div>
+  </div>
+  </section>
+<!-------------------------------------All Members------------------------------------------->
+
+  <section class="max-w-7xl mx-auto px-4 py-16 text-center">
+    <h1 class="text-white text-3xl font-extrabold mb-4">All Members</h1>
+    <p class="text-[#94a3b8] mb-12 max-w-2xl mx-auto">
+      Every member brings unique skills and perspectives to our cybersecurity community.
+    </p>
+
+    
+  <div class=" flex items-center justify-center  gap-6">
+   <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+     
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 text-center">
+   <div class=" flex items-center justify-center  gap-6">
+   <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+     <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 py-16 text-center">
+   <div class=" flex items-center justify-center  gap-6">
+   <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+     <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+    <div class="rounded-lg border border-[#1E2A3A] p-6 max-w-xs w-full bg-[#0f172a] transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]/20 bg-[#0F111A] text-center relative group cursor-pointer pb-20">  
+      <div class="flex justify-center mb-4">
+       <div class="w-24 h-24 mx-auto rounded-full border border-[#0f4c6b] shadow-[0_0_10px_#0f4c6b] overflow-hidden">
+           <img alt="Profile image of David Kim, circular portrait" class="w-fullh-full object-cover" height="96" src="C:\Users\HP\Desktop\the cyber wings\cyberwingsweb\main\gojo.png" width="96"/>
+        </div>
+    </div>
+    <h2 class="text-cyan-400 font-bold text-lg leading-none mb-1">David Kim</h2>
+    <p class="text-cyan-400 text-sm font-semibold mb-3">Security Researcher</p>
+    <p class="text-gray-400 text-sm leading-snug opacity-0 group-hover:opacity-60 transition-opacity duration-100 absolute left-6 right-6 bottom-6 bg-[#0f172a] rounded-md p-3 ">
+      Conducting vulnerability research and ethical hacking
+    </p>
+   </div>
+
+  </div>
+</section>
+
+<!-------------------------------------------------------- Want to join our team ------------------------------------------------------->
+
+
+<div class="bg-[#0a0f0f] text-white flex items-center justify-center px-6 py-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl w-full">
+    
+    <!-- Box 1 -->
+    <div class="bg-[#0f1a2a] border border-cyan-700 rounded-lg p-8 text-center transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]">
+      <h2 class="text-2xl font-bold mb-4">Want to Join <span class="text-white">Our Team?</span></h2>
+      <p class="text-gray-400 mb-6">
+        We're always looking for passionate individuals who want to learn, contribute, and grow in the cybersecurity field.
+      </p>
+       <a href="#" class="bg-cyan-400 text-black  py-2 px-4 rounded-md inline-flex items-center justify-center gap-1 shadow-md transition animate-blink-cyan">
+        Apply for Membership
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7m0 0v7m0-7L10 14" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="bg-[#0f1a2a] border border-cyan-700 rounded-lg p-8 text-center transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00CFFF]">
+      <h2 class="text-2xl font-bold mb-4">Want to Join as a Speaker</h2>
+      <p class="text-gray-400 mb-6">
+        We're always looking for passionate individuals who want to learn, contribute, and grow in the cybersecurity field.
+      </p>
+       <a href="#" class="bg-cyan-400 text-black  py-2 px-4 rounded-md inline-flex items-center justify-center gap-1 shadow-md transition animate-blink-cyan">
+        Apply for Membership
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 3h7m0 0v7m0-7L10 14" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
+
+
