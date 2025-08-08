@@ -1,30 +1,34 @@
-<html lang="en">
- <head>
+<head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   The Cyber Wings
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <title>The Cyber Wings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Use Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+
   <link rel="stylesheet" href="egs.css" />
   
   <style>
-     @keyframes bounce-smooth {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
-  .bounce-smooth {
-    animation: bounce-smooth 2.5s infinite;
-  }
-  </style>
+    /* Apply Roboto globally */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
 
- </head>
+    @keyframes bounce-smooth {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .bounce-smooth {
+      animation: bounce-smooth 2.5s infinite;
+    }
+  </style>
+</head>
+
  <body class="bg-gradient-to-br from-[#050a0f] via-[#0a1a2a] to-[#050a0f] text-gray-300 min-h-screen flex flex-col">
   <!-- Navigation -->
-  <header class="bg-[#050a0f] border-b border-[#0a1a27] sticky top-0 z-50">
+  <header class="bg-[#050a0f] border-b border-[#0a1a27] sticky top-0 z-50 select-none">
    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
     <div class="flex items-center space-x-2">
     <svg height="50"width="50" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +68,7 @@
      </li>
     </ul>
     <div class="hidden md:flex space-x-6 text-gray-400 text-lg">
-     <a aria-label="Instagram" class="hover:text-pink-600 transition" href="#">
+     <a aria-label="Instagram" class="hover:text-pink-600 transition" href="https://www.instagram.com/the_cyber_wings?igsh=Y3Z0NjJzY2tndXJv">
       <i class="fab fa-instagram">
       </i>
      </a>
@@ -87,16 +91,16 @@
      <p class="text-cyan-400 font-mono text-sm select-none">
       $ ./welcome.sh
      </p>
-     <h1 class="font-extrabold text-white text-5xl sm:text-6xl leading-tight">
+     <h1 class="font-extrabold text-white text-5xl sm:text-6xl leading-tight ">
        Welcome to<br>
       <span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-400 bg-clip-text text-transparent">
        The Cyber Wings
       </span>
      </h1>
-     <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
+     <p class="text-gray-400 text-lg leading-relaxed max-w-lg select-none">
       The premier cybersecurity club at our college, dedicated to exploring digital security, ethical hacking, and building a community of cyber enthusiasts.
      </p>
-     <div class="flex space-x-4">
+     <div class="flex space-x-4 select-none">
       <a class="inline-flex items-center justify-center bg-cyan-400 hover:bg-cyan-500 text-black font-semibold rounded-lg px-8 py-3 shadow-lg shadow-cyan-400/50 transition" href="#membership">
        Join Us Now
        <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +116,7 @@
        </svg>
       </a>
      </div>
-     <div class="flex justify-between max-w-md mt-16">
+     <div class="flex justify-between max-w-md mt-16 select-none">
       <div class="flex flex-col items-center space-y-1">
        <i class="fas fa-user-friends text-cyan-400 text-3xl">
        </i>
@@ -147,11 +151,11 @@
     </section>
     
     <!---------------------------------------------Terminal---------------------------------------------------->
-   <div class="mt-20 bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-lg shadow-xl w-[500px] font-mono text-sm bounce-smooth">
+   <div class="mt-20 bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700 rounded-lg shadow-xl w-[500px] font-mono text-sm bounce-smooth select-none">
 
   
   <!-- Terminal Header -->
-  <div class="flex items-center px-4 py-2 bg-gray-800 rounded-t-lg border-b border-gray-700">
+  <div class="flex items-center px-6 py-2 bg-gray-800 rounded-t-lg border-b border-gray-700">
     <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
     <span class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
     <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
@@ -159,7 +163,7 @@
   </div>
 
   <!-- Terminal Content -->
-  <div class="p-4">
+  <div class="p-8" >
     <p class="text-green-400">$ whoami</p>
     <p class="text-white">cyberwing_member</p>
     <br>
@@ -177,7 +181,7 @@
    </section>
 
    <!-- About Section -->
-   <section class="bg-[#0B111A] text-[#A0AEC0] py-20 px-6 sm:px-10 lg:px-16" id="about">
+   <section class="bg-[#0B111A] text-[#A0AEC0] py-20 px-6 sm:px-10 lg:px-16 select-none" id="about">
     <div class="max-w-7xl mx-auto flex flex-col items-center">
      <p class="text-[#00D8FF] text-xs font-mono tracking-widest mb-3 select-none">
       01 // ABOUT US
@@ -232,8 +236,8 @@
      </div>
     </div>
    </section>
-   <!-- Our Story Section -->
-   <section class="max-w-7xl mx-auto px-6 py-20 md:py-24" id="story">
+   <!----------------------- Our Story Section ------------------------------>
+   <section class=" max-w-7xl mx-auto px-6 py-20 md:py-24 select-none" id="story">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
      <div class="md:col-span-6 space-y-6">
       <p class="text-[#00d8ff] text-xs font-semibold tracking-widest select-none">
@@ -249,7 +253,7 @@
        Our club has organized numerous workshops, participated in national cybersecurity competitions, and even hosted our own CTF (Capture The Flag) events.
       </p>
       <div class="flex space-x-12 mt-10">
-       <div class="text-center group cursor-default">
+       <div class="text-center group cursor-dex`fault">
         <p class="text-[#00d8ff] font-extrabold text-xl select-none group-hover:text-[#00d8ffcc] transition-colors duration-300">
          50+
         </p>
@@ -285,8 +289,8 @@
      </div>
     </div>
    </section>
-   <!-- Team Section -->
-   <section class="bg-[#0a0f15] text-white py-20 px-6" id="team">
+   <!-------------------------- Team Section --------------------------------->
+   <section class="bg-[#0a0f15] text-white py-20 px-6 select-none" id="team">
     <div class="max-w-[1200px] mx-auto text-center">
      <p class="text-cyan-400 text-xs mb-2 tracking-widest mono">
       02
@@ -367,8 +371,8 @@
      </button>
     </div>
    </section>
-   <!-- Events Section -->
-   <section class="bg-gradient-to-b from-[#050a0f] to-[#0a121a] text-gray-400 py-20 px-6" id="events">
+   <!------------------------------------- Events Section --------------------------------------->
+   <section class="bg-gradient-to-b from-[#050a0f] to-[#0a121a] text-gray-400 py-20 px-6 select-none" id="events">
     <div class="max-w-4xl mx-auto text-center">
      <i class="fas fa-shield-alt text-cyan-400 text-6xl mb-6">
      </i>
@@ -413,7 +417,7 @@
     </div>
    </section>
    <!-- Membership Registration Section (Merged Form) -->
-   <section class="bg-gradient-to-br from-[#000a12] via-[#00121a] to-[#001a22] text-gray-300 py-20 px-6 flex justify-center" id="membership">
+   <section class="bg-gradient-to-br from-[#000a12] via-[#00121a] to-[#001a22] text-gray-300 py-20 px-6 flex justify-center select-none" id="membership">
     <section class="max-w-4xl w-full bg-[#0a1220] border border-[#0a2a3a] rounded-xl p-8 hover:shadow-[0_0_35px_#0a2a3a] duration-1000">
      <h2 class="text-white text-2xl font-semibold mb-2">
       Membership Registration
@@ -532,8 +536,8 @@
      </form>
     </section>
    </section>
-   <!-- Call to Action Section -->
-   <section class="bg-[#0c121c] text-gray-400 py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center" id="join">
+   <!-------------------------------------------- Call to Action Section --------------------------------------->
+   <section class="bg-[#0c121c] text-gray-400 py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center select-none" id="join">
     <section class="max-w-4xl w-full bg-[#121d2e] border border-cyan-900 rounded-lg p-10 text-center  hover:border-cyan-400 hover:shadow-[0_0_35px_#0a2a3a] duration-2000 transition-colors duration-300">
      <h2 class="text-white text-3xl sm:text-4xl font-extrabold mb-4">
       Ready to Join The Cyber Wings?
@@ -553,8 +557,8 @@
     </section>
    </section>
   </main>
-  <!-- Footer -->
-  <footer class="border-t border-[#0a1a25] py-10 bg-[#0c121c]" id="contact">
+  <!----------------------------- Footer --------------------------------->
+  <footer class="border-t border-[#0a1a25] py-10 bg-[#0c121c] select-none" id="contact">
    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-center space-x-2 mb-3 text-cyan-400 font-extrabold text-sm sm:text-base">
       <svg height="50"width="50" xmlns="http://www.w3.org/2000/svg">
