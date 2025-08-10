@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>The Cyber Wings Events & Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+        font-family: 'Roboto', sans-serif;    }
+  </style>
+</head>
+<body class="bg-[#060e14] text-white min-h-screen flex flex-col select-none">
+   <!-- Navigation -->
+  <header class="bg-[#050a0f] border-b border-[#0a1a27] sticky top-0 z-50 select-none">
+   <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-2">
+    <div class="flex items-center space-x-2">
+    <svg height="50"width="50" xmlns="http://www.w3.org/2000/svg">
+    <a href="index.html">
+   <image class="w-12 h-12 mb-4 text-[#00D8FF] drop-shadow-[0_0_8px_rgba(0,216,255,0.7)]" height="50" width="50" href="logo.png"/>
+    </svg>
+    </a>
+     <span class="font-extrabold text-cyan-400 text-lg tracking-wide select-none drop-shadow-[0_0_8px_rgba(0,216,255,0.7)]">
+      THECYBERWINGS
+     </span>
+    </div>
+    <ul class="hidden md:flex space-x-10 text-sm font-normal text-gray-400">
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="about.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="member.html">
+       Members
+      </a>
+     </li>
+     <li>
+      <a class="text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" href="Event.html">
+       Events
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-cyan-400 hover:font-semibold hover:border-b-2 hover:border-cyan-400 pb-1 transition" href="contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="hidden md:flex space-x-6 text-gray-400 text-lg">
+     <a aria-label="Instagram" class="hover:text-pink-600 transition" href="https://www.instagram.com/the_cyber_wings?igsh=Y3Z0NjJzY2tndXJv">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="GitHub" class="hover:text-white transition" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-blue-500 transition" href="https://www.linkedin.com/company/the-cyber-wings/">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </nav>
+  </header>
+  <section
+    class=" py-12 px-4 text-center max-w-7xl mx-auto w-full">
+    <p class="text-[#00cfff] text-sm font-mono mb-3 tracking-wide">
+      03
+      <span class="text-white"> // </span>ACTIVITIES
+    </p>
+    <h1 class="text-5xl font-extrabold max-w-4xl mx-auto mb-4">
+      Events &amp;
+      <span class="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+          Gallery
+        </span>
+    </h1>
+    <p class="text-[#a0a9b8] text-lg max-w-3xl mx-auto leading-relaxed">
+      Explore our past events, workshops, competitions, and memorable moments
+      <br />
+      from The Cyber Wing community.
+    </p>
+  </section>
+  <section
+    class="flex justify-center gap-4 max-w-7xl mx-auto px-4 mb-12 flex-wrap"
+  >
+    <button
+      id="allBtn"
+      class="bg-[#00cfff] text-[#060e14] rounded-full px-6 py-3 font-medium shadow-[0_0_15px_#00cfff] transition"
+    >
+      All Events
+    </button>
+    <button
+      id="workshopsBtn"
+      class="border border-[#1f2a3a] rounded-full px-6 py-3 font-medium text-[#a0a9b8] hover:border-[#00cfff] transition"
+    >
+      Workshops
+    </button>
+    <button
+      id="competitionsBtn"
+      class="border border-[#1f2a3a] rounded-full px-6 py-3 font-medium text-[#a0a9b8] hover:border-[#00cfff] transition"
+    >
+      Competitions
+    </button>
+    <button
+      id="meetupsBtn"
+      class="border border-[#1f2a3a] rounded-full px-6 py-3 font-medium text-[#a0a9b8] hover:border-[#00cfff] transition"
+    >
+      Meetups
+    </button>
+  </section>
+  <section
+    id="eventsContainer"
+    class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20"
+  >
+    <!-- Events will be rendered here -->
+  </section>
+
+  <script>
+    const events = [
+      {
+        id: 1,
+        category: "workshops",
+        title: "Web Application Security Workshop",
+        date: "Oct 15, 2023",
+        location: "Computer Science Building, Room 305",
+        description:
+          "Hands-on workshop covering OWASP Top 10 vulnerabilities and secure coding practices.",
+        image:
+          "https://placehold.co/600x400?text=Web+Application+Security+Workshop+Image",
+        alt: "Dark event room with multiple screens and red lights, showing a workshop environment",
+      },
+      {
+        id: 2,
+        category: "competitions",
+        title: "Capture The Flag Competition",
+        date: "Nov 5, 2023",
+        location: "Virtual Event (Discord)",
+        description:
+          "Competitive hacking event where participants solve security challenges to capture flags.",
+        image:
+          "https://placehold.co/600x400?text=Capture+The+Flag+Competition+Image",
+        alt: "Green matrix code background representing a Capture The Flag competition event",
+      },
+      {
+        id: 3,
+        category: "meetups",
+        title: "Annual Cybersecurity Summit",
+        date: "Dec 10, 2023",
+        location: "Main Auditorium",
+        description:
+          "A gathering of cybersecurity enthusiasts and professionals sharing insights and networking.",
+        image:
+          "https://placehold.co/600x400?text=Annual+Cybersecurity+Summit+Image",
+        alt: "Blurred colorful code on a computer screen representing an annual cybersecurity summit",
+      },
+      {
+        id: 4,
+        category: "workshops",
+        title: "Ethical Hacking Basics",
+        date: "Jan 20, 2024",
+        location: "Tech Lab, Room 101",
+        description:
+          "Introduction to ethical hacking techniques and tools for beginners.",
+        image:
+          "https://placehold.co/600x400?text=Ethical+Hacking+Basics+Workshop",
+        alt: "Workshop room with laptops and participants learning ethical hacking",
+      },
+      {
+        id: 5,
+        category: "competitions",
+        title: "Bug Bounty Challenge",
+        date: "Feb 15, 2024",
+        location: "Online Platform",
+        description:
+          "Find and report security vulnerabilities in simulated environments to win prizes.",
+        image:
+          "https://placehold.co/600x400?text=Bug+Bounty+Challenge+Competition",
+        alt: "Computer screen showing bug bounty challenge interface",
+      },
+      {
+        id: 6,
+        category: "meetups",
+        title: "Monthly Cybersecurity Meetup",
+        date: "Every 1st Friday",
+        location: "Community Hall",
+        description:
+          "Monthly meetup to discuss latest trends, tools, and news in cybersecurity.",
+        image:
+          "https://placehold.co/600x400?text=Monthly+Cybersecurity+Meetup",
+        alt: "Group of people networking and discussing cybersecurity topics",
+      },
+    ];
+
+    const eventsContainer = document.getElementById("eventsContainer");
+    const allBtn = document.getElementById("allBtn");
+    const workshopsBtn = document.getElementById("workshopsBtn");
+    const competitionsBtn = document.getElementById("competitionsBtn");
+    const meetupsBtn = document.getElementById("meetupsBtn");
+    const buttons = [allBtn, workshopsBtn, competitionsBtn, meetupsBtn];
+
+    function renderEvents(filter = "all") {
+      let filteredEvents =
+        filter === "all"
+          ? events
+          : events.filter((event) => event.category === filter);
+
+      eventsContainer.innerHTML = filteredEvents
+        .map(
+          (event) => `
+      <article class="relative rounded-lg overflow-hidden border border-[#1f2a3a]">
+        <img
+          alt="${event.alt}"
+          class="w-full h-64 object-cover"
+          height="400"
+          src="${event.image}"
+          width="600"
+        />
+        <div class="absolute top-3 right-3 bg-[#00cfff] rounded-full p-2 cursor-pointer">
+          <i class="fas fa-image text-white text-lg"></i>
+        </div>
+        <div class="p-4 bg-[#060e14]">
+          <h3 class="font-semibold text-white mb-2 text-sm sm:text-base">${event.title}</h3>
+          <p class="text-[#a0a9b8] text-xs sm:text-sm mb-2">${event.description}</p>
+          <div class="flex items-center text-[#a0a9b8] text-xs sm:text-sm space-x-3">
+            <div class="flex items-center gap-1">
+              <i class="far fa-calendar-alt"></i>
+              <span>${event.date}</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>${event.location}</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      `
+        )
+        .join("");
+    }
+
+    function setActiveButton(activeBtn) {
+      buttons.forEach((btn) => {
+        if (btn === activeBtn) {
+          btn.classList.add("bg-[#00cfff]", "text-[#060e14]", "shadow-[0_0_15px_#00cfff]");
+          btn.classList.remove("border", "border-[#1f2a3a]", "text-[#a0a9b8]");
+        } else {
+          btn.classList.remove("bg-[#00cfff]", "text-[#060e14]", "shadow-[0_0_15px_#00cfff]");
+          btn.classList.add("border", "border-[#1f2a3a]", "text-[#a0a9b8]");
+        }
+      });
+    }
+
+    allBtn.addEventListener("click", () => {
+      renderEvents("all");
+      setActiveButton(allBtn);
+    });
+
+    workshopsBtn.addEventListener("click", () => {
+      renderEvents("workshops");
+      setActiveButton(workshopsBtn);
+    });
+
+    competitionsBtn.addEventListener("click", () => {
+      renderEvents("competitions");
+      setActiveButton(competitionsBtn);
+    });
+
+    meetupsBtn.addEventListener("click", () => {
+      renderEvents("meetups");
+      setActiveButton(meetupsBtn);
+    });
+
+    // Initial render
+    renderEvents("all");
+  </script>
+</body>
+</html>
